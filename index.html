@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f7f6">
+  <title>Conecta+ | Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <a href="#" class="logo">Conecta<span>+</span></a>
+  </header>
+
+  <main>
+    <section class="formulario-container">
+      <div class="titulo">
+        <span class="etiqueta">OPORTUNIDADES</span>
+        <h1>Vamos conversar?</h1>
+        <p>Preencha seus dados e envie sua mensagem.</p>
+      </div>
+
+      <form id="formulario">
+        <div class="campo">
+          <label for="nome">Nome completo</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome"
+            autocomplete="name"
+            required
+          >
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="seuemail@exemplo.com"
+            autocomplete="email"
+            required
+          >
+        </div>
+
+        <div class="campo">
+          <label for="telefone">Telefone</label>
+          <input
+            type="tel"
+            id="telefone"
+            name="telefone"
+            placeholder="(61) 99999-9999"
+            autocomplete="tel"
+            required
+          >
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem</label>
+          <textarea
+            id="mensagem"
+            name="mensagem"
+            placeholder="Escreva sua mensagem..."
+            rows="4"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" id="botao">
+          Enviar cadastro <span>→</span>
+        </button>
+
+        <p id="aviso" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>Conecta+ · 2026</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
